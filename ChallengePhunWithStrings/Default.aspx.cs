@@ -19,7 +19,7 @@ namespace ChallengePhunWithStrings
             Array.Reverse(nameArray);
             string reverseName = new string(nameArray);
 
-            // OR
+            // OR Bob's way...
             string nameResult = "";
             for (int i = name.Length -1 ; i >= 0 ; i--)
             {
@@ -37,7 +37,7 @@ namespace ChallengePhunWithStrings
             string fourthName = names.Split(',')[3].Split(',')[0];
             string result1 = fourthName + "," + thirdName + "," + secondName + "," + firstName;
 
-            // OR
+            // OR Bob's way...
             string[] rebelScum = names.Split(',');
             string rebels = "";
             for (int i = rebelScum.Length - 1; i >= 0; i--)
@@ -69,7 +69,7 @@ namespace ChallengePhunWithStrings
                     result += values[i].PadLeft(11, '*').PadRight(14, '*') + "<br/>";
             }
 
-            // OR
+            // OR Bob's way...
             for (int i = 0; i < values.Length; i++)
             {
                 int padLeft = (14 - values[i].Length) / 2;
@@ -92,7 +92,7 @@ namespace ChallengePhunWithStrings
             // third lowercase everything after first letter
             string answer = puzzleLowerRemoveReplace.Substring(0, 1).ToUpper() + puzzleLowerRemoveReplace.Substring(1);
 
-            //OR
+            //OR Bob's way...
             string removeMe = "remove-me";
             int index = puzzle.IndexOf(removeMe);
             puzzle = puzzle.Remove(index, removeMe.Length);
@@ -103,10 +103,10 @@ namespace ChallengePhunWithStrings
 
 
             // display all results together
-            resultLabel.Text = nameResult + "<br/><br/>" + reverseName + "<br/><br/>" +  
-                result1 + "<br/><br/>" + rebels + "<br/><br/>" + 
-                result + "<br/>" + result2 + "<br/><br/>" + 
-                answer + "<br/><br/>" + puzzle;
+            resultLabel.Text = nameResult + "<br/><br/>Bob's way...<br/>" + reverseName + "<br/><br/>" +  
+                result1 + "<br/><br/>Bob's way...<br/>" + rebels + "<br/><br/>" + 
+                result + "<br/><br/>Bob's way...<br/>" + result2 + "<br/><br/>" + 
+                answer + "<br/><br/>Bob's way...<br/>" + puzzle;
 
         }
     }
