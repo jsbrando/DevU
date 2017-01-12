@@ -16,7 +16,6 @@ namespace ChallengeHeroMonsterClassesPart2
 
         protected void battleButton_Click(object sender, EventArgs e)
         {
-            // put in click instead
             resultLabel.Text = "";
 
             Character theHero = new Character();
